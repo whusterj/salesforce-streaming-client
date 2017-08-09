@@ -110,7 +110,7 @@ class SalesforceStreamingClient(BayeuxClient):
 
         if replay_client_id is None:
             replay_client_id = \
-                ''.join(choice(ascii_lowercase) for i in xrange(12))
+                ''.join(choice(ascii_lowercase) for i in range(12))
 
         self.replay_data_filename = os.path.join(
             self.settings_path,

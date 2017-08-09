@@ -472,7 +472,7 @@ def test_replay_do_not_repeat_handler(caplog, get_oauth_info):
 
     first_replay_id = None
 
-    replay_client_id = ''.join(choice(ascii_lowercase) for i in xrange(12))
+    replay_client_id = ''.join(choice(ascii_lowercase) for i in range(12))
 
     with ClientForReplay(oauth_client_id, client_secret,
                          username, sandbox=sandbox,
@@ -566,7 +566,7 @@ def test_replay_new_client_specific_replay_id(caplog, get_oauth_info):
     first_replay_id = None
     second_replay_id = None
 
-    replay_client_id = ''.join(choice(ascii_lowercase) for i in xrange(12))
+    replay_client_id = ''.join(choice(ascii_lowercase) for i in range(12))
 
     with ClientForReplay(oauth_client_id, client_secret,
                          username, sandbox=sandbox,
@@ -667,7 +667,7 @@ def test_replay_new_client_default_replay(caplog, get_oauth_info):
     username2 = get_oauth_info[3]
     sandbox = get_oauth_info[4]
 
-    replay_client_id = ''.join(choice(ascii_lowercase) for i in xrange(12))
+    replay_client_id = ''.join(choice(ascii_lowercase) for i in range(12))
 
     with ClientForReplay(oauth_client_id, client_secret,
                          username, sandbox=sandbox,
